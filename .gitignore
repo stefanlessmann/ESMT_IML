@@ -7,4 +7,6 @@
 # ignore all py-cache files
 **/.pyc
 
+/.venv/
+
 /notebooks/archive/

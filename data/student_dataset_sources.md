@@ -1,7 +1,0 @@
-# Datasets for the trees, deep learning and XAI notebooks
-
-- `tree_lecture_resale.csv`: the 13 age/price pairs transcribed from slide 7 of `internal/MAAI-IML-13-15-Tree_Based_Algorithms.pdf`. A teaching example, not a representative evaluation sample. Age is in months; resale price is in USD.
-- `handwritten_digits.csv`: frozen export of all 1,797 rows of scikit-learn's bundled `load_digits()` dataset. The first 64 integer columns are 8×8 image intensities flattened in row-major order (0–16); `digit` is the label (0–9). All rows and original ordering are preserved. Exported with scikit-learn 1.9.1; no network fetch, subsampling, augmentation or label changes. See `handwritten_digits_source.txt` for the bundled dataset description, creators and references. The underlying source is the UCI Optical Recognition of Handwritten Digits dataset by E. Alpaydin and C. Kaynak, 1998. These bundled rows originate from its original test subset; notebook train/validation/test partitions are new teaching partitions and do not reproduce the official benchmark.
-- `resale_price_dataset.csv`: existing course data, reused without changes for trees and XAI. The notebooks predict resale prices at equipment return, when actual lease duration and battery condition are observable. No claim of external representativeness or verified real-world provenance is made.
-
-All student notebooks read the frozen CSVs locally and do not download or generate data at runtime.

@@ -9,5 +9,8 @@
 
 /.venv/
 
-/notebooks/archive/
+/archive/
 /internal/
+
+# Local notebook-authoring instructions
+/Agents.md

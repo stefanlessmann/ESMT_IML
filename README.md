@@ -23,7 +23,7 @@ uv sync
 ```
 .
 ├── data/        # Datasets used in the tutorials
-├── notebooks/   # Practice-session demos, exercises, and solutions
+├── handouts/    # Practice-session demos, exercises, and solutions
 ├── resources/   # Images and other supporting materials
 ├── pyproject.toml
 ├── uv.lock      # Locked dependency versions

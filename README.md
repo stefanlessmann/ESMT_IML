@@ -8,15 +8,52 @@ For enrolled students, additional resources, updates, and discussions are availa
 
 ## Installation
 
-Install [uv](https://docs.astral.sh/uv/getting-started/installation/) first, then clone the repository and install its dependencies:
+This repository requires **Python 3.14**. Clone the repository, then choose one of the installation methods below:
 
 ```bash
 git clone https://github.com/stefanlessmann/ESMT_IML.git
 cd ESMT_IML
+```
+
+### Option 1: Using `uv` (recommended)
+
+If you have [uv](https://docs.astral.sh/uv/getting-started/installation/) installed:
+
+```bash
 uv sync
 ```
 
-`uv sync` creates a virtual environment and installs the dependencies defined in `pyproject.toml`, using `uv.lock` to keep versions consistent. This repository requires Python 3.14.
+**Advantages:** Fast, reliable, automatically handles Python 3.14 if not present.  
+**Install uv:** See [installation guide](https://docs.astral.sh/uv/getting-started/installation/) (macOS: `brew install uv`, Windows/Linux: follow docs)
+
+### Option 2: Using `pip`
+
+If you prefer the standard Python package manager:
+
+```bash
+python -m venv .venv
+# On macOS/Linux:
+source .venv/bin/activate
+# On Windows:
+.venv\Scripts\activate
+
+pip install -r requirements.txt
+```
+
+**Advantages:** Widely available, minimal setup.  
+**Note:** Ensure Python 3.14 is installed on your system first.
+
+### Option 3: Using `conda`
+
+If you use Anaconda or Miniconda:
+
+```bash
+conda env create -f environment.yml
+conda activate esmt-iml
+```
+
+**Advantages:** Handles Python version and binary dependencies seamlessly.  
+**Note:** Requires Anaconda, Miniconda, or Mambaforge to be installed.
 
 ## Repository Structure
 
